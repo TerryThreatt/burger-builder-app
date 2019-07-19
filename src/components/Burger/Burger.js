@@ -15,15 +15,7 @@ const burger = (props) => {
     if(transformedIngredients.length === 0) { 
         transformedIngredients = <p>Please start adding ingredients!</p>
     }
-    // const burger = props => {
-    //     let transformedIngredients = [];  
-    //     transformedIngredients = props.ingredients.map((element, index) => {
-    //         let changedArr = [];
-    //         for(let i=0; i<element.quantity; i++){
-    //             changedArr.push(<BurgerIngredient type={element.name}/>);
-    //         }
-    //         return changedArr;
-    //     })
+    
     return (
         <div className={classes.Burger}>
             <BurgerIngredient type="bread-top"/>
